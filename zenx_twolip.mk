@@ -20,7 +20,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/zenx/config/common_full_phone.mk)
+
+#Bleed Zenx
+ZENX_BUILD_TYPE :=UNOFFICIAL
 
 # Inherit from twolip device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,7 +31,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := twolip
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_twolip
+PRODUCT_NAME := zenx_twolip
 PRODUCT_MODEL := Redmi Note 6 Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
